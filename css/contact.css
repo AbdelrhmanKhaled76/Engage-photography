@@ -1,0 +1,170 @@
+body {
+    text-transform: capitalize;
+    font-family: Source Serif Pro;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+#layer {
+    background-color: #000000d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    display: none;
+}
+
+#hr {
+    color: #7d7d7d;
+    width: 100%;
+}
+
+#main-search {
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid #fff;
+    padding: 20px;
+    font-size: 10vw;
+    color: #fff;
+    outline: none;
+}
+
+#search-result .search-icon{
+    font-size: 3.125rem !important;
+}
+
+#main-search:focus {
+    border-bottom: 2px solid #fff; /* Change border thickness on focus */
+}
+
+.container {
+    width: 80%;
+}
+
+.header{
+    color: #fff;
+}
+
+:root {
+    --first-sec: #101010;
+    --second-sec: #161616;
+    --third-sec : #1D1D1D;
+    --main-color: #7D8585;
+    --secondary-color : #606060;
+}
+
+/* global  */
+nav {
+    transition: all 0.5s;
+}
+
+
+nav .container a i {
+    font-size: 1.25rem;
+}
+
+#nav .navbar-brand img {
+    height: 46px;
+}
+
+/* navbar  */
+
+#home {
+    background-color: var(--first-sec);
+    height: 50vh;
+}
+
+.home-blog-text {
+    color: var(--main-color);
+}
+
+#home a {
+    transition: 1s;
+    color: #202A33;
+}
+
+#home a:hover {
+    color: var(--main-color);
+}
+
+/* home  */
+
+#contact {
+    background-color: var(--second-sec);
+}
+
+.form-pad {
+    width: calc( (100% - 20px) / 2 );
+}
+
+
+.form-style {
+    background-color: transparent;
+    outline: none;
+    border-color: white;
+    color: white;
+}
+
+.form-style:focus {
+    border: 1px solid #606060;
+}
+
+.contact-info p {
+    color: var(--main-color);
+}
+
+.contact-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-logo i {
+    color: white;
+    padding: 10px;
+    border: 1px solid #333333;
+    background-color: #333333;
+    border-radius: 50%;
+}
+
+
+#footer {
+    min-height: 40vh;
+    background-color: var(--first-sec);
+}
+
+#footer {
+    color: var(--secondary-color);
+    font-size: .8125rem;
+}
+
+#footer span a {
+    color: gray;
+}
+
+#footer span a i {
+    transition: all 1s;
+}
+
+#footer .facebook:hover {
+    color: blue;
+}
+
+#footer .instagram:hover {
+    color: hotpink;
+}
+
+#footer .linkedin:hover {
+    color: white;
+}
+
+#footer .github:hover {
+    color: white;
+}
+
+#footer span  a i {
+    padding-inline: 10px;
+    font-size: 1.5rem;
+}
+
+/* --- footer ---  */

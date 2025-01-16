@@ -1,0 +1,84 @@
+
+
+@media (max-width: 1399.98px) { 
+    
+}
+
+@media (max-width: 1199.98px) { 
+    .about-us-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    .about-us-div .img img {
+        margin-inline: auto !important;
+    }    
+}
+
+@media (max-width: 991.98px) { 
+
+}
+
+@media (max-width: 767.98px) { 
+    #logo {
+        width: 75%;
+    }    
+    h1 {
+        font-size: 3rem !important;
+    }    
+    h2 {
+        font-size: 1.5rem !important;
+    }    
+    p {
+        font-size: 1rem !important;
+    }    
+
+    .about-us-div .img img {
+        width: 400px !important;
+        height: 300px !important;
+    }    
+
+    #navbarSupportedContent{
+        padding-bottom: 5px !important;
+    }
+
+    .menu {
+        font-size: 0.75rem !important;
+    }
+
+    #latest-albums .latest-albums-info ul li {
+        margin-inline: 5px;
+    }
+    .card-img-top {
+        height: 75% !important;
+        object-fit: cover !important;
+    }
+
+    #search-result .search-icon{
+        font-size: 2rem !important;
+    }
+    .contact-logo {
+        padding-block: 5px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    #logo {
+        width: 60%;
+    }    
+    h1 {
+        font-size: 2.5rem !important;
+    }    
+    h2 {
+        font-size: 1rem !important;
+    }    
+    p {
+        font-size: 0.75rem !important;
+    }    
+    .about-us-div .img img {
+        width: 300px !important;
+        height: 200px !important;
+    }    
+}    
+
+
