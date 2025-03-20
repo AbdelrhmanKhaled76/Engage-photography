@@ -14,6 +14,10 @@ body {
     display: none;
 }
 
+#hr {
+    color: #7d7d7d;
+    width: 100%;
+}
 
 #main-search {
     background-color: transparent;

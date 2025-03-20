@@ -24,13 +24,17 @@ body {
     border: none;
     border-bottom:1px solid #fff;
     padding: 20px;
-    font-size: 10vw;
+    font-size: 3.75rem;
     color: #fff;
     outline: none;
 }
 
-#search-result .search-icon{
-    font-size: 3.125rem !important;
+
+.search-icon {
+    font-size: 3.125rem;
+    position: relative;
+    top: 0;
+    right: 70px;
 }
 
 #main-search:focus {
