@@ -1,20 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
       href="./images/logo-light.png"
       type="image/x-icon"
     />
+
+    <!-- ✅ Use Owl Carousel from CDN (instead of node_modules) -->
     <link
       rel="stylesheet"
-      href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Your Other Stylesheets -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Engage</title>
   </head>
   <body>
@@ -27,7 +39,7 @@
           placeholder="Search..."
           class="w-50 mx-auto"
         />
-        <a href="#" id="search-result"
+        <a title="search result" href="#" id="search-result"
           ><i
             class="fa-solid fa-magnifying-glass text-white px-2 search-icon"
           ></i
@@ -70,7 +82,7 @@
               <a class="nav-link" href="./view/contact.html">contact</a>
             </li>
           </ul>
-          <a href="#" class="search-link"
+          <a title="search link" href="#" class="search-link"
             ><i class="fa-solid fa-magnifying-glass text-white px-2"></i
           ></a>
         </div>
@@ -83,7 +95,7 @@
       <section id="home" class="vh-100">
         <div class="container">
           <div
-            class="home-info text-white w-100 h-100 d-flex justify-content-center align-items-start flex-column"
+            class="home-info text-white w-100 vh-100 d-flex justify-content-center align-items-start flex-column"
           >
             <p data-aos="fade-down" data-aos-delay="500">welcome to</p>
             <h1 class="py-3" data-aos="fade-down" data-aos-delay="500">
@@ -114,10 +126,10 @@
           <div
             class="welcoming-text d-flex justify-content-center align-items-center flex-column"
           >
-            <h2 class="py-5 header" data-aos="slide-left" data-aos-delay="50">
+            <h2 class="py-5 header" data-aos="fade-down" data-aos-delay="500">
               Welcome to our website!
             </h2>
-            <p class="text-center" data-aos="slide-right" data-aos-delay="100">
+            <p class="text-center" data-aos="fade-up" data-aos-delay="500">
               Nunc id ante quis tellus faucibus dictum in eget metus. Duis
               suscipit elit sem, sed mattis tellus accumsan eget. Quisque
               consequat venenatis rutrum. Quisque posuere enim augue, in rhoncus
@@ -132,15 +144,15 @@
       <section id="about-us">
         <div class="container py-5">
           <div class="about-us-div d-flex">
-            <div class="img" data-aos="slide-right" data-aos-delay="500">
+            <figure class="img" data-aos="fade-right" data-aos-delay="1000">
               <img
                 src="./images/photo-1484519332611-516457305ff6-800x700.jpg"
                 alt=""
               />
-            </div>
-            <div
+            </figure>
+            <figcaption
               class="about-us-text ps-5"
-              data-aos="slide-left"
+              data-aos="fade-left"
               data-aos-delay="1000"
             >
               <h2 class="header py-5">Learn about us</h2>
@@ -156,7 +168,7 @@
                 ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </p>
-            </div>
+            </figcaption>
           </div>
         </div>
       </section>
@@ -183,7 +195,7 @@
           </div>
           <div class="gallary row">
             <div class="col-md-4 col-12">
-              <div id="1" class="photo position-relative mb-4">
+              <figure id="1" class="photo position-relative mb-4">
                 <img src="./images/alex-iby-251903-600x.jpg" alt="" />
                 <div
                   class="layer position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100"
@@ -199,10 +211,10 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
+              </figure>
             </div>
             <div class="col-md-4 col-12">
-              <div id="2" class="photo position-relative mb-4">
+              <figure id="2" class="photo position-relative mb-4">
                 <img
                   src="./images/nathaniel-chang-298253-600x.jpg"
                   alt=""
@@ -222,8 +234,8 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
-              <div id="3" class="photo position-relative mb-4">
+              </figure>
+              <figure id="3" class="photo position-relative mb-4">
                 <img src="./images/lesly-b-juarez-199312-600x.jpg" alt="" />
                 <div
                   class="layer position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100"
@@ -239,8 +251,8 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
-              <div id="4" class="photo position-relative mb-4">
+              </figure>
+              <figure id="4" class="photo position-relative mb-4">
                 <img src="./images/redd-angelo-11908-600x.jpg" alt="" />
                 <div
                   class="layer position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100"
@@ -256,10 +268,10 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
+              </figure>
             </div>
             <div class="col-md-4 col-12">
-              <div id="5" class="photo position-relative mb-4">
+              <figure id="5" class="photo position-relative mb-4">
                 <img src="./images/mohammad-metri-325178-600x.jpg" alt="" />
                 <div
                   class="layer position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100"
@@ -275,8 +287,8 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
-              <div id="6" class="photo position-relative mb-4">
+              </figure>
+              <figure id="6" class="photo position-relative mb-4">
                 <img
                   src="./images/photo-1486074051793-e41332bf18fc-600x764.jpg"
                   alt=""
@@ -295,7 +307,7 @@
                     ><i class="fa-solid fa-link"></i
                   ></a>
                 </div>
-              </div>
+              </figure>
             </div>
           </div>
           <div class="button-div text-center">
@@ -413,21 +425,31 @@
             <p class="py-4">Copyright 2017. All rights reserved.</p>
             <span class="d-flex justify-content-between align-items-center">
               <a
+                title="linked in link"
+                rel="noopener"
                 href="https://www.linkedin.com/in/abdelrhmankhaledmohamed76/"
                 target="_blank"
                 ><i class="fa-brands fa-linkedin-in linkedin"></i
               ></a>
               <a
+                title="instagram link"
+                rel="noopener"
                 href="https://www.instagram.com/abdalrhman.khaled76/"
                 target="_blank"
                 ><i class="fa-brands fa-instagram instagram"></i
               ></a>
               <a
+                title="facebook link"
+                rel="noopener"
                 href="https://www.facebook.com/profile.php?id=100007781251288"
                 target="_blank"
                 ><i class="fa-brands fa-facebook-f facebook"></i
               ></a>
-              <a href="https://github.com/AbdelrhmanKhaled76" target="_blank"
+              <a
+                title="github link"
+                rel="noopener"
+                href="https://github.com/AbdelrhmanKhaled76"
+                target="_blank"
                 ><i class="fa-brands fa-github github"></i
               ></a>
             </span>

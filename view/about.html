@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../images/logo-light.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/logo-light.png"
+      type="image/x-icon"
+    />
+
+    <!-- ✅ Use Owl Carousel from CDN (instead of node_modules) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!-- Your Other Stylesheets -->
+    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>About</title>
-</head>
-<body>
-    <div id="layer" class=" w-100 vh-100 position-fixed">
-        <form action="" class="search-form w-100 text-center">
-            <input id="main-search" maxlength="24" type="serch" placeholder="Search..." class="w-50 mx-auto">
-            <a href="#" id="search-result"><i class="fa-solid fa-magnifying-glass text-white px-2 search-icon"></i></a>
-        </form>
+  </head>
+  <body>
+    <div id="layer" class="w-100 vh-100 position-fixed">
+      <form action="" class="search-form w-100 text-center">
+        <input
+          id="main-search"
+          maxlength="24"
+          type="serch"
+          placeholder="Search..."
+          class="w-50 mx-auto"
+        />
+        <a href="#" id="search-result"
+          ><i
+            class="fa-solid fa-magnifying-glass text-white px-2 search-icon"
+          ></i
+        ></a>
+      </form>
     </div>
     <nav
       id="mynav"
-      class="navbar navbar-expand-lg  navbar-dark position-fixed w-100 z-3 bg-dark"
+      class="navbar navbar-expand-lg navbar-dark position-fixed w-100 z-3 bg-dark"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -42,7 +69,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " href="../index.html">home</a>
+              <a class="nav-link" href="../index.html">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="about.html">about</a>
@@ -61,151 +88,253 @@
       </div>
     </nav>
     <main>
-        <section id="info" class=" pt-5 text-white d-flex justify-content-center align-items-center flex-column" >
-            <h1 class="pt-5" data-aos="fade-down" data-aos-delay="500">about</h1>
-            <p data-aos="fade-up" data-aos-delay="500">learn more about me</p>
-        </section>
+      <section
+        id="info"
+        class="pt-5 text-white d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="pt-5" data-aos="fade-down" data-aos-delay="500">about</h1>
+        <p data-aos="fade-up" data-aos-delay="500">learn more about me</p>
+      </section>
 
-        <!-- info  -->
+      <!-- info  -->
 
-        <section id="about-me" >
-            <div class="container py-5 ">
-                <div class="row g-5 py-5">
-                    <div class="about-me-info col-lg-7 " data-aos="fade-right" data-aos-delay="1000">
-                        <div>
-                            <h2 class="text-white">who am i?</h2>
-                            <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
-                            <hr class="w-25">
-                            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                        </div>
-                    </div>
-                    <div class="about-me-pic col-lg-5" data-aos="fade-left" data-aos-delay="1000">
-                        <div>
-                            <img src="../images/romain-lours-133986-600x420.jpg" alt="" class="w-100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- about-me  -->
-
-
-        <section id="start">
-            <div class="container py-5 ">
-                <div class="row g-5">
-                    <div class="start-pic col-lg-5" data-aos="fade-right" data-aos-delay="500">
-                        <img src="../images/square-1-800x760.jpg" alt="" class="w-100">
-                    </div>
-                    <div class="start-info col-lg-7 " data-aos="fade-left" data-aos-delay="500">
-                        <h2 class="text-white">How did I start?</h2>
-                        <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
-                        <hr class="w-25">
-                        <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- start  -->
-
-        <section id="skills">
-            <div class="container">
-                <div class="row g-3 py-5 text-center" data-aos="fade-up" data-aos-delay="500">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="skill">
-                            <i class="fa-solid fa-list-check"></i>
-                            <h3>Powerful Options</h3>
-                            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="skill">
-                            <i class="fa-solid fa-desktop"></i>
-                            <h3>Responsive Design</h3>
-                            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="skill">
-                            <i class="fa-solid fa-pencil"></i>
-                            <h3>Page Builder</h3>
-                            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="skill">
-                            <i class="fa-solid fa-heart-circle-check"></i>
-                            <h3>Satisfied Clients</h3>
-                            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- skills  -->
-
-        <section id="our-goals">
-            <div class="container d-flex justify-content-center align-items-center flex-column px-3 pb-5">
-                <div class="buttons py-5">
-                    <button id="goalsBtn" class="btn btn-dark p-2 active me-2">OUR GOAL</button>
-                    <button id="methodsBtn" class="btn btn-dark p-2 ms-2">OUR METHODS</button>
-                </div>
-                <div class="row pb-5">
-                    <div class="col-md-6 position-relative">
-                        <div class="our-goal">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Nulla sollicitudin lorem quis.</p>
-                        </div>
-                        <div class="our-methods">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur illum neque aperiam sunt nemo voluptate earum expedita amet odit tempora, ut fugiat suscipit. Ullam, iusto magni? Eum, debitis id temporibus quis ducimus eligendi atque aut tenetur neque voluptas modi laboriosam quia molestias unde quisquam? Atque voluptates laborum beatae nam sit harum voluptatum similique exercitationem quae minima libero ratione, modi odio laudantium doloribus perferendis impedit cupiditate ipsam dicta vel voluptatibus.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 position-relative">
-                        <div class="our-goal">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Nulla sollicitudin lorem quis.</p>
-                        </div>
-                        <div class="our-methods">
-                            <p>Phasellus mattis efficitur sollicitudin. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Proin nec dui congue neque cursus ullamcorper. Sed ipsum risus, ultrices a posuere ac, molestie sed tortor. Aenean gravida enim velit, ut auctor eros porttitor in. Phasellus consectetur a est dictum aliquet. Nulla et neque efficitur, auctor purus vel, ornare tellus. Aenean non tellus elementum purus feugiat ullamcorper a ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam fermentum tristique ante.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- our goals  -->
-        
-        <footer id="footer">
-            <div class="container">
-              <div
-                class="footer-content p-5 d-flex justify-content-center align-items-center flex-column"
-              >
-                <img src="../images/engage-photography.png" alt="" />
-                <p class="py-4">Copyright 2017. All rights reserved.</p>
-                <span class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="https://www.linkedin.com/in/abdelrhmankhaledmohamed76/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin-in linkedin"></i
-                  ></a>
-                  <a
-                    href="https://www.instagram.com/abdalrhman.khaled76/"
-                    target="_blank"
-                    ><i class="fa-brands fa-instagram instagram"></i
-                  ></a>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100007781251288"
-                    target="_blank"
-                    ><i class="fa-brands fa-facebook-f facebook"></i
-                  ></a>
-                  <a href="https://github.com/AbdelrhmanKhaled76" target="_blank"
-                    ><i class="fa-brands fa-github github"></i
-                  ></a>
-                </span>
+      <section id="about-me">
+        <div class="container py-5">
+          <div class="row g-5 py-5">
+            <div
+              class="about-me-info col-lg-7"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+            >
+              <div>
+                <h2 class="text-white">who am i?</h2>
+                <p>
+                  We have been operating for over 30 years and are Members of
+                  The Federation of Master Builders. We work on projects big and
+                  small from small residential extensions to full house. We are
+                  so happy with this theme. Everyday it make our lives better.
+                </p>
+                <hr class="w-25" />
+                <p>
+                  I am text block. Click edit button to change this text. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                  tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                </p>
               </div>
             </div>
-          </footer>
-        <!-- footer  -->
+            <div
+              class="about-me-pic col-lg-5"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+            >
+              <div>
+                <img
+                  src="../images/romain-lours-133986-600x420.jpg"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about-me  -->
+
+      <section id="start">
+        <div class="container py-5">
+          <div class="row g-5">
+            <div
+              class="start-pic col-lg-5"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
+              <img src="../images/square-1-800x760.jpg" alt="" class="w-100" />
+            </div>
+            <div
+              class="start-info col-lg-7"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <h2 class="text-white">How did I start?</h2>
+              <p>
+                We have been operating for over 30 years and are Members of The
+                Federation of Master Builders. We work on projects big and small
+                from small residential extensions to full house and commercial
+                builds and we are registered NHBC house builders.
+              </p>
+              <hr class="w-25" />
+              <p>
+                I am text block. Click edit button to change this text. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- start  -->
+
+      <section id="skills">
+        <div class="container">
+          <div
+            class="row g-3 py-5 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="col-lg-3 col-md-6">
+              <div class="skill">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>Powerful Options</h3>
+                <p>
+                  Morbi pellentesque, nisl id semper bibendum, nibh sem
+                  fermentum magna, eget commodo.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="skill">
+                <i class="fa-solid fa-desktop"></i>
+                <h3>Responsive Design</h3>
+                <p>
+                  Morbi pellentesque, nisl id semper bibendum, nibh sem
+                  fermentum magna, eget commodo.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="skill">
+                <i class="fa-solid fa-pencil"></i>
+                <h3>Page Builder</h3>
+                <p>
+                  Morbi pellentesque, nisl id semper bibendum, nibh sem
+                  fermentum magna, eget commodo.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="skill">
+                <i class="fa-solid fa-heart-circle-check"></i>
+                <h3>Satisfied Clients</h3>
+                <p>
+                  Morbi pellentesque, nisl id semper bibendum, nibh sem
+                  fermentum magna, eget commodo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills  -->
+
+      <section id="our-goals">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column px-3 pb-5"
+        >
+          <div class="buttons py-5">
+            <button id="goalsBtn" class="btn btn-dark p-2 active me-2">
+              OUR GOAL
+            </button>
+            <button id="methodsBtn" class="btn btn-dark p-2 ms-2">
+              OUR METHODS
+            </button>
+          </div>
+          <div class="row pb-5">
+            <div class="col-md-6 position-relative">
+              <div class="our-goal">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  ultrices nisl diam, vitae consequat massa lacinia consequat.
+                  Nullam cursus risus a sem pretium lacinia. Etiam facilisis
+                  laoreet justo. Morbi mattis, turpis quis volutpat fermentum,
+                  lacus ante sagittis eros, vitae imperdiet leo felis ut ligula.
+                  Nulla sollicitudin lorem quis tempor mattis. Maecenas
+                  tincidunt nibh a velit dapibus gravida. Aliquam nisi enim,
+                  viverra eu nulla sed, fermentum volutpat dui. Nulla
+                  sollicitudin lorem quis.
+                </p>
+              </div>
+              <div class="our-methods">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem aspernatur illum neque aperiam sunt nemo voluptate
+                  earum expedita amet odit tempora, ut fugiat suscipit. Ullam,
+                  iusto magni? Eum, debitis id temporibus quis ducimus eligendi
+                  atque aut tenetur neque voluptas modi laboriosam quia
+                  molestias unde quisquam? Atque voluptates laborum beatae nam
+                  sit harum voluptatum similique exercitationem quae minima
+                  libero ratione, modi odio laudantium doloribus perferendis
+                  impedit cupiditate ipsam dicta vel voluptatibus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <div class="our-goal">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  ultrices nisl diam, vitae consequat massa lacinia consequat.
+                  Nullam cursus risus a sem pretium lacinia. Etiam facilisis
+                  laoreet justo. Morbi mattis, turpis quis volutpat fermentum,
+                  lacus ante sagittis eros, vitae imperdiet leo felis ut ligula.
+                  Nulla sollicitudin lorem quis tempor mattis. Maecenas
+                  tincidunt nibh a velit dapibus gravida. Aliquam nisi enim,
+                  viverra eu nulla sed, fermentum volutpat dui. Nulla
+                  sollicitudin lorem quis.
+                </p>
+              </div>
+              <div class="our-methods">
+                <p>
+                  Phasellus mattis efficitur sollicitudin. Aliquam nisi enim,
+                  viverra eu nulla sed, fermentum volutpat dui. Proin nec dui
+                  congue neque cursus ullamcorper. Sed ipsum risus, ultrices a
+                  posuere ac, molestie sed tortor. Aenean gravida enim velit, ut
+                  auctor eros porttitor in. Phasellus consectetur a est dictum
+                  aliquet. Nulla et neque efficitur, auctor purus vel, ornare
+                  tellus. Aenean non tellus elementum purus feugiat ullamcorper
+                  a ut urna. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus. Nam fermentum tristique ante.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- our goals  -->
+
+      <footer id="footer">
+        <div class="container">
+          <div
+            class="footer-content p-5 d-flex justify-content-center align-items-center flex-column"
+          >
+            <img src="../images/engage-photography.png" alt="" />
+            <p class="py-4">Copyright 2017. All rights reserved.</p>
+            <span class="d-flex justify-content-between align-items-center">
+              <a
+                href="https://www.linkedin.com/in/abdelrhmankhaledmohamed76/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/abdalrhman.khaled76/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100007781251288"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f facebook"></i
+              ></a>
+              <a href="https://github.com/AbdelrhmanKhaled76" target="_blank"
+                ><i class="fa-brands fa-github github"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- footer  -->
     </main>
     <!-- java script  -->
     <script src="../node_modules/jquery/dist/jquery.js"></script>
@@ -213,5 +342,5 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/index.js"></script>
-</body>
+  </body>
 </html>
