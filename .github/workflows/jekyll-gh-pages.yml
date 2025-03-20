@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages  # ✅ This fixes the "Missing environment" error
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
