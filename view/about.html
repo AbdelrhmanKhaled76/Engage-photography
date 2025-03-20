@@ -39,7 +39,7 @@
           placeholder="Search..."
           class="w-50 mx-auto"
         />
-        <a href="#" id="search-result"
+        <a title="search result" href="#" id="search-result"
           ><i
             class="fa-solid fa-magnifying-glass text-white px-2 search-icon"
           ></i
@@ -81,7 +81,7 @@
               <a class="nav-link" href="contact.html">contact</a>
             </li>
           </ul>
-          <a href="#" class="search-link"
+          <a title="search icon" href="#" class="search-link"
             ><i class="fa-solid fa-magnifying-glass text-white px-2"></i
           ></a>
         </div>
@@ -313,21 +313,31 @@
             <p class="py-4">Copyright 2017. All rights reserved.</p>
             <span class="d-flex justify-content-between align-items-center">
               <a
+                title="linked in link"
+                rel="noopener"
                 href="https://www.linkedin.com/in/abdelrhmankhaledmohamed76/"
                 target="_blank"
                 ><i class="fa-brands fa-linkedin-in linkedin"></i
               ></a>
               <a
+                title="instagram link"
+                rel="noopener"
                 href="https://www.instagram.com/abdalrhman.khaled76/"
                 target="_blank"
                 ><i class="fa-brands fa-instagram instagram"></i
               ></a>
               <a
+                title="facebook link"
+                rel="noopener"
                 href="https://www.facebook.com/profile.php?id=100007781251288"
                 target="_blank"
                 ><i class="fa-brands fa-facebook-f facebook"></i
               ></a>
-              <a href="https://github.com/AbdelrhmanKhaled76" target="_blank"
+              <a
+                title="github link"
+                rel="noopener"
+                href="https://github.com/AbdelrhmanKhaled76"
+                target="_blank"
                 ><i class="fa-brands fa-github github"></i
               ></a>
             </span>
@@ -337,8 +347,12 @@
       <!-- footer  -->
     </main>
     <!-- java script  -->
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel (use CDN instead of node_modules) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- AOS Animation (CDN remains the same) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/index.js"></script>
